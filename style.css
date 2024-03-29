@@ -60,9 +60,13 @@ input {
 }
 
 button {
-    background-color: #0098ef;
+    background: #0098ef;
+    border: 1px solid royalblue;
     color: white;
-}
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 3vh;
+  }
 
 .buttns {
     margin-top: 40px;
@@ -91,6 +95,10 @@ button {
     
 }
 
+.blk1 .heads {
+    padding: 0 15px;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(2, minmax(50px, 1fr));
@@ -113,7 +121,51 @@ button {
     font-size: 12px;
 }
 
-.cards .title {
+.projects .cards .title {
     font-size: 14px;
     font-weight: bold;
+}
+
+.announce {
+    margin-bottom: 20px;
+}
+
+.blocks  {
+    text-align: left;
+    padding: 0 10px;
+    border: 5px solid white; 
+    background-color: white;
+    box-shadow: 
+        /*inset 0 -3em 3em rgb(0 200 0 / 30%),*/
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(218, 225, 231);
+    border-radius: 1vh;
+    font-size: 8px;
+}
+
+.blocks .cards .title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blocks p {
+
+    background-image: linear-gradient(
+        to top,
+        rgb(218, 225, 231) 0 1px,
+        transparent 2px 1lh 
+    );
+}
+
+.blocksT  {
+    text-align: left;
+    padding: 0 10px;
+    border: 5px solid white; 
+    background-color: white;
+    box-shadow: 
+        /*inset 0 -3em 3em rgb(0 200 0 / 30%),*/
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(218, 225, 231);
+    border-radius: 1vh;
+    font-size: 10px;
 }
