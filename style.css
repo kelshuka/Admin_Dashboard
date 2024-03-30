@@ -28,7 +28,9 @@ body {
     color: white;
     grid-column: 1/2;
     grid-row: 1/5;
-    height: 100vh;
+    height: 150vh;
+    padding-left: 20px;
+    padding-top: 30px ;
 }
 
 
@@ -48,6 +50,10 @@ body {
 .header{
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.header {
+    position: -webkit-sticky;
 }
 
 input {
@@ -81,8 +87,24 @@ button {
     display: grid;
     row-gap: 30px;
 }
+
+.dashSvg {
+    filter: brightness(0) invert(1);
+}
+
+.dash {
+    display: flex;
+    gap: 10px;
+}
+
 .greeting {
-    
+    display: flex;
+    gap: 10px;
+}
+
+.lstsa {
+    display: flex;
+    gap: 15px;
 }
 
 
@@ -118,11 +140,12 @@ button {
         0.3em 0.3em 1em rgb(218, 225, 231);
     border-radius: 1vh;
     border-left-color: orange;
-    font-size: 12px;
+    font-size: 18px;
+    height: 100%;
 }
 
 .projects .cards .title {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -140,11 +163,11 @@ button {
         0 0 0 2px white,
         0.3em 0.3em 1em rgb(218, 225, 231);
     border-radius: 1vh;
-    font-size: 8px;
+    font-size: 15px;
 }
 
 .blocks .cards .title {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -167,5 +190,9 @@ button {
         0 0 0 2px white,
         0.3em 0.3em 1em rgb(218, 225, 231);
     border-radius: 1vh;
-    font-size: 10px;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
 }
